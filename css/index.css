@@ -268,6 +268,23 @@ nav.primary-nav a {
   color: #000;
 }
 
+/* Buttons */
+a.learn-more-btn {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 9px;
+  padding: 2.5% 7%;
+  display: inline-block;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+a.learn-more-btn:hover {
+  color: #fff;
+  background-color: #000;
+}
+
 /* ---------
 Home page
 --------- */
@@ -318,22 +335,14 @@ section.hero-image {
   background-color: dodgerblue;
 }
 
-/* About Page */
+/* ---------
+About page
+--------- */
 
 .about-page .top-content .text-container {
   width: 100%;
   padding: 0 2%;
   padding-bottom: 20px;
-}
-
-a.learn-more-btn {
-  text-decoration: none;
-  color: #000;
-  background-color: #fff;
-  border: 2px solid #000;
-  border-radius: 9px;
-  padding: 2.5% 7%;
-  display: inline-block;
 }
 
 section.about-us-list {
@@ -359,7 +368,6 @@ section.about-us-list > div:nth-last-child(2) {
 
 section.about-us-list > div img {
   width: 100%;
-  margin-bottom: 10px;
 }
 
 section.about-us-list > div p {
@@ -369,4 +377,55 @@ section.about-us-list > div p {
 section.work-together {
   padding: 0 2%;
   margin: 0 0 5%;
+}
+
+div.image-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+div.image-box > div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -150%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  transition: transform 0.25s ease-in-out;
+}
+
+div.image-box:hover > div {
+  transform: translate(-50%, -50%);
+}
+
+div.image-box > div span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* -------------------------------------
+MEDIA QUERIES
+-------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .flex > div {
+    width: 100% !important;
+  }
+  section.two-column > div,
+  section.three-column > div {
+    margin-bottom: 4%;
+  }
 }
