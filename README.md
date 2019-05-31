@@ -40,7 +40,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
     Block takes up the full width of its parent by default.
     As a result, multiple block elements will stack under one another.
-    Inline block takes up an amount of space relative to the content of each element, and positions them in across in a row (if there are multiple siblings together).
+    Inline block takes up an amount of space relative to the content of each element, and positions them across in a row (if there are multiple siblings together).
 
 3.  What are the 4 areas of the box model?
 

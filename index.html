@@ -9,10 +9,12 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <div class="container">
+    <div class="container home-page">
         <header>
           <div class="site-logo">
             <img src="img/lambda-black.png" width="157" height="40" alt="Lambda School Logo">
@@ -87,5 +89,10 @@
             </nav>
         </footer>
     </div><!-- container -->
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+          $('.home-page').addClass('loaded');
+        });
+    </script>
 </body>
 </html>

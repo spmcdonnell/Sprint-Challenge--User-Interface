@@ -241,6 +241,15 @@ NEW CODE
 Global styles
 ----------- */
 
+body > div.container {
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+body > div.container.loaded {
+  opacity: 1;
+}
+
 /* Header */
 header {
   display: flex;
@@ -408,24 +417,4 @@ div.image-box > div span {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-/* -------------------------------------
-MEDIA QUERIES
--------------------------------------- */
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 3em;
-  }
-  .flex {
-    flex-direction: column;
-  }
-  .flex > div {
-    width: 100% !important;
-  }
-  section.two-column > div,
-  section.three-column > div {
-    margin-bottom: 4%;
-  }
 }
